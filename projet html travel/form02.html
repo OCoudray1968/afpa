@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>Enquête sur les anciens stagiaires</title>
+</head>
+<body>
+	<h1><center>Nous lançons une grande enquête sur les anciens stagiaires</center></h1>
+	<h4><center>merci de nous répondre</center></h4>
+<form method="get" action="http://www.afpa.fr">
+	<p>
+		<input type="text" name="nom" />
+		Votre nom
+	</p>
+	<p> <input type="text" name="prenom">
+		Votre Prénom
+	</p>
+	<p> <input type="date" name="date_de_naissance">
+			Votre Date de naissance
+	</p>
+	<p> <input type="text" name="adresse">
+		Votre Adresse
+	</p>
+	<p> <input type="text" name="ville">
+		Votre Ville
+	</p>
+	<p> <input type="text" name="cp">
+		Votre Code Postal
+	</p>
+	<p>
+		<input type="email" name="email" />
+		Votre e-Mail
+	</p>
+	
+	
+		<input type="radio" name="sexe" value="Cd"
+		checked="checked" />Vous êtes un homme <input type="radio" name="sexe" value="Dk" />Vous êtes une femme
+	<p>
+		<select name="metier">
+			<option value="Developpeur" selected="selected">Developpeur</option>
+			<option value="Analyste">Analyste</option>
+			<option value="Chef de projet">chef de projet</option>
+			<option value="Autre">Autre</option>
+		</select>
+	</p>
+	<p>
+		<input type="text" name="autre">  Si vous avez répondu autre, précisez
+	</p>			
+	<p>
+		<select name="salaire">
+			<option value="<1000€" selected="selected"><1000€</option>
+			<option value=">1000€ et <1500€">>1000€ et <1500€</option>
+			<option value=">1500€ et <2000€">>1500€ et <2000€</option>
+			<option value=">2000€">>2000€</option>
+		</select>
+	</p>
+	<p>
+		<input type="text" name="annee"> En quelle année avez-vous suivi le stage AFPA
+	</p>
+	<P>
+		<textarea name="commentaires" id="commentaires" rows="4">Vos commentaires</textarea>
+	</P>	
+	<p><STRONG>Merci d'avoir répondu au questionnaire</STRONG></p>	
+	<p>
+		<input type="submit" value="validez" />
+		<input type="reset" value="annulez"/>
+	</p>
+
+</form>
+</body>
+</html>
