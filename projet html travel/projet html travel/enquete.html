@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="utf-8"/>
+			<center><title>Enquête de satisfaction</title>
+			<form method="post" action="index.html">
+
+		</head>
+
+		<body background="images/fond-ecran.jpg">
+			<h1>Enquête de satisfaction sur votre sejour</h1>
+			<h3>Merci de prendre un instant pour repondre a ce questionnaire, nous comptons sur votre franchise !</h3>
+
+			<p>
+    			<label for="nom">Votre nom</label> <input type="text" name="nom" id="nom" /> <label for="prenom">Votre prenom</label> <input type="text" name="prenom" id="prenom" /> 
+    		</p>
+    		<p>	
+    			<label for="datesejour">Votre date de sejour  </label> <input type="date" name="datesejour" id="datesejour" /> <label for="destination">Votre lieu de sejour  </label><select name="destination" id="destination">
+           <option value="Maldives">Maldives</option>
+           <option value="Reunion">Reunion</option>
+           <option value="Zanzibar">Zanzibar</option>
+           <option value="Nouvelle-Caledonie">Nouvelle-Caledonie</option>
+           <option value="St-Martin">St-Martin</option>
+       </select>
+    		</p>
+    		<p>
+    			<input type="number" name="age" min="18" id="age" /> <label for="age">Votre age </label> 
+    		<input type="email" name="email" id="email" /> <label for="email">Votre email</label>
+    		</p>
+
+			<h4>Votre acceuil a votre premier jour vous a t-il été convenable ? ?</h4>
+			<p><input type="radio" name="notesejour" value="notesejour" id="notesejour" /> <label for="notesejour">tres satisfaisant </label> <input type="radio" name="notesejour" value="notesejour" id="notesejour" /> <label for="notesejour">Satisfaisant </label><input type="radio" name="notesejour" value="notesejour" id="notesejour" /> <label for="notesejour">moyen </label> <input type="radio" name="notesejour" value="notesejour" id="notesejour" /> <label for="notesejour">Mediocre </label><br /></p>
+
+			<h4>Le personnel present repondait-il a vos attentes ?</h4>
+			<p><input type="radio" name="notepersonel" value="notepersonel" id="notepersonel" /> <label for="notepersonel">Completement </label> <input type="radio" name="notepersonel" value="notepersonel" id="notepersonel" /> <label for="notepersonel">Suffisamment </label><input type="radio" name="notepersonel" value="notesejour" id="notepersonel" /> <label for="notepersonel">moyen </label> <input type="radio" name="notepersonel" value="notepersonel" id="notepersonel" /> <label for="notepersonel">Mediocre </label><br /></p>
+
+			<h4>Votre hébergement etait-il convenable et propre ?</h4>
+			<p><input type="radio" name="notechambre" value="notechambre" id="notechambre" /> <label for="notechambre">tres satisfaisant </label> <input type="radio" name="notechambre" value="notechambre" id="notechambre" /> <label for="notechambre">Satisfaisant </label><input type="radio" name="notechambre" value="notechambre" id="notechambre" /> <label for="notechambre">moyen </label> <input type="radio" name="notechambre" value="notechambre" id="notechambre" /> <label for="notechambre">Mediocre </label><br /></p>
+
+			<h4>La restauration du club vous etait-elle satisfaisante ?</h4>
+			<p><input type="radio" name="noteresto" value="noteresto" id="noteresto" /> <label for="noteresto">tres satisfaisant </label> <input type="radio" name="noteresto" value="noteresto" id="noteresto" /> <label for="noteresto">Satisfaisant </label><input type="radio" name="noteresto" value="noteresto" id="noteresto" /> <label for="noteresto">moyen </label> <input type="radio" name="noteresto" value="notesresto" id="noteresto" /> <label for="noteresto">Mediocre </label><br /></p>
+
+			<h4>L'ambiance et les evenements proposés vous etaient-ils a la hauteur de vos attentes ?</h4>
+			<p><input type="radio" name="noteambiance" value="noteambiance" id="noteambiance" /> <label for="noteambiance">tres satisfaisant </label> <input type="radio" name="noteambiance" value="noteambiance" id="noteambiance" /> <label for="noteambiance">Satisfaisant </label><input type="radio" name="noteambiance" value="noteambiance" id="noteambiance" /> <label for="noteambiance">moyen </label> <input type="radio" name="noteambiance" value="noteambiance" id="noteambiance" /> <label for="noteambiance">Mediocre </label><br /></p>
+
+			<h4>Les activités proposées etaient-elles suffisantes ?</h4>
+			<p><input type="radio" name="noteacti" value="notesejour" id="noteacti" /> <label for="noteacti">tres suffisant </label> <input type="radio" name="noteacti" value="noteacti" id="noteacti" /> <label for="noteacti">Satisfaisant </label><input type="radio" name="noteacti" value="noteacti" id="noteacti" /> <label for="noteacti">moyen </label> <input type="radio" name="noteacti" value="noteacti" id="noteacti" /> <label for="noteacti">Mediocre </label><br /></p>
+
+			<h4>Les activités destinés aux enfants etaient-elles appropriées ?</h4>
+			<p><input type="radio" name="noteactienf" value="noteactienf" id="noteactienf" /> <label for="noteactienf">Completement </label> <input type="radio" name="noteactienf" value="noteactienf" id="noteactienf" /> <label for="noteactienf">Suffisamment </label><input type="radio" name="noteactienf" value="noteactienf" id="noteactienf" /> <label for="noteactienf">moyennement </label> <input type="radio" name="noteactienf" value="noteactienf" id="noteactienf" /> <label for="noteactienf">Mediocre </label><br /></p>
+
+			<h4>Recommanderiez-vous nos clubs de vacances a votre entourage ?</h4>
+			<p><input type="radio" name="recommandation" value="recommandation" id="recommandation" /> <label for="recommandation">Completement </label> <input type="radio" name="recommandation" value="recommandation" id="recommandation" /> <label for="recommandation">moyennement </label> <input type="radio" name="recommandation" value="recommandation" id="recommandation" /> <label for="recommandation">Pas le moins du monde </label><br /></p>
+
+			<h3>Vos remarques et suggestions</h3>
+			<textarea cols="50" rows="5">Zone de texte!</textarea>
+
+			<p><h2> Merci de votre participation !</h2></p>
+
+    			<p><input type="submit" name="validation" id="validation" value="validez"> <input type="reset" name="annulation" id="annulation" value="annulez"</p></center>
+	</body>
+		</html>
