@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Formulaire de location</title>
+    </head>
+
+    <body background="images/fond-ecran.jpg">
+    	<h1>Formulaire de location pour destination de rêve</h1>
+    	<h3>veuillez renseigner tout les champs</h3>
+    	<form method="post" action="traitement.php">
+
+    		<p>
+    			<input type="text" name="nom" id="nom" /> <label for="nom">Votre nom</label></p>
+    		<p>	
+    			<input type="text" name="prenom" id="prenom" /> <label for="prenom">Votre prenom</label>
+    		</p>
+    		<p>	
+    			<input type="date" name="datenaissance" id="datenaissance" /> <label for="datenaissance">Votre date de naissance</label>
+    		</p>
+    		<p>	
+    			<input type="text" name="adresse" id="adresse" /> <label for="adresse">Votre adresse</label>
+    		</p>
+    		<p>
+    			<input type="text" name="ville" id="ville" /> <label for="ville">Votre ville</label>
+    		</p>
+    		<p>
+    			<input type="text" name="codepostal" id="codepostal" /> <label for="codepostal">Votre code postal</label>
+    		</p>
+    		<p>	
+    			<input type="email" name="email" id="email" /> <label for="email">Votre email</label>
+    		</p>
+    		<p><input type="radio" name="solo" value="solo" id="solo" /> <label for="solo">vous êtes seul(e) ?</label> <input type="radio" name="solo" value="couple" id="couple" /> <label for="couple">vous êtes en couple ?</label><br /></p>
+    		<label for="possedeenfants">Possedez-vous des enfants ?</label>
+    		<input type="radio" name="enfants" value="enfants" id="enfants" /> <label for="enfants">oui</label> <input type="radio" name="noenfants" value="noenfants" id="noenfants" /> <label for="noenfants">non</label><br /></p>
+    		<p>
+    			<label for="nombreenfants">Combien ?</label> <input type="number" name="nombreenfants" id="nombreenfants" /></p>
+
+    			<label for="nombrechambre">nombre de chambres souhaitées ?</label> <input type="number" name="nombrechambre" id="nombrechambre" /></p>
+    			<label for="lit">Souhaitez-vous un lit double ?</label>
+    		<input type="radio" name="lit" value="litdouble" id="litdouble" /> <label for="litdouble">oui</label> <input type="radio" name="lit" value="paslitdouble" id="paslitdouble" /> <label for="paslitdouble">non</label><br /></p>
+
+    			<label for="destination">quelle destination souhaiteriez-vous ?</label><br />
+       <select name="destination" id="destination">
+           <option value="Maldives">Maldives</option>
+           <option value="Reunion">Reunion</option>
+           <option value="Zanzibar">Zanzibar</option>
+           <option value="Nouvelle-Caledonie">Nouvelle-Caledonie</option>
+           <option value="St-Martin">St-Martin</option>
+       </select>
+       <p>	
+    			<label for="datedepart">Debut de votre sejour </label><input type="date" name="datedepart" id="datedepart" />
+    		</p>
+    		<label for="nombrejours">nombre de jours souhaités ?</label> <input type="range" name="nombrejours" id="nombrejours" /></p>
+
+    		<p><input type="radio" name="regime" value="regime" id="regime" /> <label for="regime">pension complete ?</label> <input type="radio" name="regime" value="demiregime" id="demiregime" /> <label for="demiregime">Demi-pension ?</label><br /></p>
+
+    		<label for="activite">Voulez-vous participer a des activités supplementaires sur place ?</label>
+    		<input type="radio" name="activitee" value="plongee" id="plongee" /> <label for="plongee">Plongée</label> <input type="radio" name="activitee" value="randonee" id="randonee" /> <label for="randonee">Randonnée</label> <input type="radio" name="activitee" value="plancheavoile" id="plancheavoile" /> <label for="plancheavoile">Planche a voile</label><input type="radio" name="activitee" value="aquagym" id="aquagym" /> <label for="aquagym">Aquagym</label><br /></p>
+
+    		<p><h2> A bientot sur place !</h2></p>
+
+    			<p><input type="submit" name="validation" id="validation" value="validez"> <input type="reset" name="annulation" id="annulation" value="annulez"</p>
+
+    		
+    
+    </body>
+</html>
