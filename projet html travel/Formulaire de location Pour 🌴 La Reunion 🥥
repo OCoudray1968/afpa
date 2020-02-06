@@ -55,6 +55,7 @@
 			<p style="color:#AED6F1">
     			<input type="email" name="codepostal" id="codepostal" /> <label for="codepostal">A𝐝𝐫𝐞𝐬𝐬𝐞 𝐦𝐚𝐢𝐥📑</label>
     		</p>
+						<p><input type="submit" name="validation" id="validation" value="validez"> <input type="reset" name="annulation" id="annulation" value="annulez"</p>
 			<br> </br>  <br> </br> <br> </br> 
 			<table   border="0"width="50%"> 
 			<tr>
@@ -63,15 +64,16 @@
  <td align="center"> <a href="https://www.rentiles.fr/location-vehicules-reunion.html"><strong style="color:#FDFEFE" >🚙𝑳𝑶𝑼𝑬𝑹 𝑷𝑨𝑺 𝑪𝑯𝑬𝑹 𝑼𝑵𝑬 𝑽𝑶𝑰𝑻𝑼𝑹𝑬 𝑨 𝑳𝑨 𝑹𝑬́𝑼𝑵𝑰𝑶𝑵 ⛺‍</strong> </a>  </td> 
  <td align="center"> <a href="https://www.tripadvisor.fr/Hotels-g293826-Reunion_Island-Hotels.html"><strong style="color:#FDFEFE" >💤𝑯𝒐̂𝒕𝒆𝒍𝒔 𝒂̀ 𝑰𝒍𝒆 𝒅𝒆 𝑳𝒂 𝑹𝒆́𝒖𝒏𝒊𝒐𝒏 🛏️‍</strong> </a> </td> </tr>
  
+ <!--
  <td>
- <img src=https://media.giphy.com/media/7UHrDRVaFYxyg/giphy.gif width="100%"  height="80%"  />
+ <img src=https://media.giphy.com/media/7UHrDRVaFYxyg/giphy.gif width="30%"  height="20%"  />
  </td>
  <td>
-  <img src=https://media.giphy.com/media/xUPGcKhur5Vlrs6xPO/giphy.gif width="100%"  height="100%"  />
+  <img src=https://media.giphy.com/media/xUPGcKhur5Vlrs6xPO/giphy.gif width="20%"  height="20%"  />
   </td>
   <td> 
-<img src=https://media.giphy.com/media/10jniOyQtffjbO/giphy.gif width="100%"  height="100%"  />
- 
+<img src=https://media.giphy.com/media/10jniOyQtffjbO/giphy.gif width="20%"  height="20%"  />
+ -->
 			
 	</head>
 </html>
