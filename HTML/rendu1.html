@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr-FR	">
+<head>
+	<title>Exercice HTML</title>
+ 	<meta charset="UTF-8">
+</head>
+ <style>
+	body {
+  		background-image: url('images/background.jpg');
+  		background-repeat: no-repeat;
+  		background-attachment: fixed;
+ 		background-size: cover;
+		}
+
+	table, th, td {
+ 		 border: 1px solid black;
+ 		 padding: 10px;
+ 		 text-align:left;
+ 		 background-color: #B2B2B2;
+
+		} 
+
+</style> 
+<body style="background-color:lightgrey;">
+
+	<!-- header de la page -->
+
+	<header>
+		<h1 style="font-size:60px; text-align: center">Introduction à l'HTML</h1>
+		
+
+		<h2 style="text-align: right"> <a  href="https://www.w3schools.com" target="_blank">Source du cours HTML <img src="images/index.jpg" alt="W3Schools" width="80" height="80"/></a></h2>
+		<br>
+		<ol>
+ 			 <li><a href="#accueil">Accueil</a></li>
+ 			 <li><a href="#histo">Historique</a></li>
+  			 <li><a href="#tags">Les tags</a></li>
+  			 <li><a href="#tuto">Tuto</a></li>
+  		</ol>
+ 		<hr>
+	</header>	
+
+	<!-- corps de la page-->
+	<div id="accueil">
+ 	<h2 style="font-size: 200%;">Introduction</h2>
+	<p>
+		<abbr title="Hyper Text Markup Language">HTML</abbr> est basé sur le langage <mark style="color:grey">Hyper Text MarkUp</mark>, il decrit la structure de la page Web.<br>
+		Il consiste en une série d'éléments qui vont dire au navigateur comment les afficher.<br>
+		ces éléménts sont representé par des tags.<br>
+		ces différent tags peuvent contenir des informations comme <ins>"heading", "paragraph",table"</ins> etc... .<br>
+		Le navigateur n'affiche pas ces tags mais s'en sert pour le rendu du contenu de la page.
+	</p>
+	<hr>
+	<h2>Les navigateurs WEB</h2>
+	<p>
+		Le but des navigateurs <em>(Chrome, Edge, Firefox...) </em>est de lire les documents HTML et de les afficher.<br>
+		<strong>Le navigateur n'affiche pas les tags HTML</strong>, mais s'en sert pour determiner comment afficher le doucment.
+	</p>
+	<h2>les éditeurs HTML</h2>
+	<p style="color: blue ;border:2px solid DodgerBlue;">
+		On peut créer et modifier des pages HTML en utilisant des éditeurs professionnel HTML.<br>
+		Néanmoins pour pour apprendre le HTML, un simple éditeur de texte comme Notepad est recommandé.</p>
+	<hr>
+	<h2>Exemple simple de page HTML</h2>
+	<h3>document HTML</h3>
+	<pre style="background: rgba(86, 108, 71, 0.5);">
+		Tout les documents HTML doivent commencer par une déclaration de type : &lt;!DOCTYPE html&gt;
+		Le document HTML lui même débute par &lt;html&gt; et fini par &lt;/html&gt;
+	</pre>
+	<hr>
+	</div>
+	<div id="histo">
+	<h2 style ="font-size:200%; font-family:felix titling; background: gray " title="Historique">Histoire du HTML </h2>
+	
+	<table style="width:100%">
+		<tr>
+			<th>Année</th>
+			<th>Version</th>
+		</tr>
+		<tr>
+			<td>1989</td>
+			<td>Tim Berners-Lee invente www</td>
+		</tr>
+		<tr>
+			<td>1991</td>
+			<td>Tim Berners-Lee invente HTML</td>
+		</tr>
+		<tr>
+			<td>1993</td>
+			<td>Dave Raggett drafted HTML+</td>
+		</tr>
+		<tr>
+			<td>1997</td>
+			<td>W3C Recommendation: HTML 3.2</td>
+		</tr>
+		<tr>
+			<td>1999</td>
+			<td>W3C Recommendation: HTML 4.01</td>
+		</tr>
+		<tr>
+			<td>2000</td>
+			<td>W3C Recommendation: XHTML 1.0</td>
+		</tr>
+		<tr>
+			<td>2008</td>
+			<td>WHATWG HTML5 First Public Draft</td>
+		</tr>
+		<tr>
+			<td>2012</td>
+			<td>WHATWG HTML5 Living Standard</td>
+		</tr>
+			<tr>
+			<td>2014</td>
+			<td>W3C Recommendation: HTML5</td>
+		</tr>
+		<tr>
+			<td>2016</td>
+			<td>W3C Candidate Recommendation: HTML 5.1</td>
+		</tr>
+		<tr>
+  		 	<td rowspan="2">2017</td>
+  			<td>W3C Recommendation: HTML5.1 2nd Edition</td>
+ 		</tr>
+ 		<tr>
+   			<td>W3C Recommendation: HTML5.2</td>
+ 		</tr>
+		
+		
+	</table>
+
+	
+</div>
+<hr>
+<div id="tags">
+	
+	<h2>Liste des principaux tags</h2>
+	<ul style="list-style-type:square;">
+		<li><b>&lt;html&gt;</b> Racine du doc Html</li>
+		<li><b>&lt;body&gt;</b> Corps du document</li>
+		<li><b>&lt;head&gt;</b> Conteneur avec les éléments d'en-tête (titre, script, style...)</li>
+		<li><b>&lt;h1&gt;to &lt;h6&gt;</b>defini les en-tête de plus gros au plus petit</li>
+		<li><b>&lt;hr&gt;</b> défini de changement de conteneur</li>
+		<li><b>&lt;p&gt;</b> défini un paragraphe</li>
+		<li><b>&lt;br&gt;</b> insère un saut de ligne</li>
+		<li><b>&lt;pre&gt;</b> defini un texte prédéfini</li>
+
+	</ul>
+	<hr>
+	<div id="tuto">
+	<h2>Tuto d'introduction au HTML</h2>
+
+	 <iframe src="video/openclassroom.htm" height="300" width="400"  name="openclassroom"></iframe> 
+	 <p><a href="video/openclassroom.htm" target="openclassroom">Cliquer pour voir le tuto</a></p>
+	</div>
+	 <button style="text-align: :center"> <a href="#accueil">Accueil</a></button> 
+</body>
+</html>
