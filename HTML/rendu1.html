@@ -20,34 +20,70 @@
 
 		} 
 
+	
+	nav	ul {
+ 		list-style-type: none;
+  		margin: 0;
+ 		padding: 0;
+  		overflow: hidden;
+ 		background-color: #333333;
+		}
+
+	nav li {
+  		float: left;
+		}
+
+	nav li a {
+  		display: block;
+  		color: white;
+ 		text-align: center;
+ 		padding: 16px;
+ 	 	text-decoration: none;
+		}
+
+	nav a:hover {
+ 	 background-color: #111111;
+		}
+
+	 .button {
+	 	 background-color: #B2B2B2;
+         border: thin;
+         color: black;
+         padding: 10px 20px;
+         text-align: center;
+         text-decoration: none;
+         font-size: 20px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
 </style> 
 <body style="background-color:lightgrey;">
 
 	<!-- header de la page -->
-
-	<header>
+	<div id="accueil">
+	
 		<h1 style="font-size:60px; text-align: center">Introduction à l'HTML</h1>
 		
 
 		<h2 style="text-align: right"> <a  href="https://www.w3schools.com" target="_blank">Source du cours HTML <img src="images/index.jpg" alt="W3Schools" width="80" height="80"/></a></h2>
 		<br>
-		<ol>
- 			 <li><a href="#accueil">Accueil</a></li>
+		<nav>
+		<ul>
  			 <li><a href="#histo">Historique</a></li>
   			 <li><a href="#tags">Les tags</a></li>
   			 <li><a href="#tuto">Tuto</a></li>
-  		</ol>
- 		<hr>
-	</header>	
-
+  		</ul>
+ 		</nav>
+	</div>
+	<hr>
 	<!-- corps de la page-->
-	<div id="accueil">
+	
  	<h2 style="font-size: 200%;">Introduction</h2>
 	<p>
-		<abbr title="Hyper Text Markup Language">HTML</abbr> est basé sur le langage <mark style="color:grey">Hyper Text MarkUp</mark>, il decrit la structure de la page Web.<br>
+		<abbr title="Hyper Text Markup Language">HTML</abbr> est basé sur le langage <mark style="color:grey">Hyper Text MarkUp</mark>, il décrit la structure de la page Web.<br>
 		Il consiste en une série d'éléments qui vont dire au navigateur comment les afficher.<br>
-		ces éléménts sont representé par des tags.<br>
-		ces différent tags peuvent contenir des informations comme <ins>"heading", "paragraph",table"</ins> etc... .<br>
+		Ces éléménts sont representé par des tags.<br>
+		Ces différent tags peuvent contenir des informations comme <ins>"heading", "paragraph",table"</ins> etc... .<br>
 		Le navigateur n'affiche pas ces tags mais s'en sert pour le rendu du contenu de la page.
 	</p>
 	<hr>
@@ -61,8 +97,7 @@
 		On peut créer et modifier des pages HTML en utilisant des éditeurs professionnel HTML.<br>
 		Néanmoins pour pour apprendre le HTML, un simple éditeur de texte comme Notepad est recommandé.</p>
 	<hr>
-	<h2>Exemple simple de page HTML</h2>
-	<h3>document HTML</h3>
+	<h2>Document HTML</h2>
 	<pre style="background: rgba(86, 108, 71, 0.5);">
 		Tout les documents HTML doivent commencer par une déclaration de type : &lt;!DOCTYPE html&gt;
 		Le document HTML lui même débute par &lt;html&gt; et fini par &lt;/html&gt;
@@ -152,6 +187,6 @@
 	 <iframe src="video/openclassroom.htm" height="300" width="400"  name="openclassroom"></iframe> 
 	 <p><a href="video/openclassroom.htm" target="openclassroom">Cliquer pour voir le tuto</a></p>
 	</div>
-	 <button style="text-align: :center"> <a href="#accueil">Accueil</a></button> 
+	     <a href="#accueil" class="button">Accueil</a>
 </body>
 </html>
