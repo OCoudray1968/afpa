@@ -8,10 +8,14 @@
       text-align: justify;
  } 
 .grid-container {
-  display: grid;
-  grid-gap: 5px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: line-height 100px;
+  grid-gap: 0.5%;
   background-color: #FFFFFF;
-  padding: 5px;
+  
 }
 
 .grid-item {
@@ -22,104 +26,108 @@
 }
 
 .item1 {
+  flex:0 1 7%;
   font-size:10px;
   text-align: left;
-  grid-column: 1;
-  grid-row: 1/ span 2;
 }
 
 .item2 {
- background-color: rgba(140, 114, 114, 0.8);
-   font-family: pacifico;
-   padding-top: 1px;
-  font-size: 50px;
+  flex:0 1 75%;
+  background-color: rgba(140, 114, 114, 0.8);
+  font-family: pacifico;
+  padding-top: 1px;
+  font-size: 3.5em;
   text-align: center;
-  grid-column: 2 /span 3;
-  grid-row: 1/span 2;
+
 }
 
 .item3 {
-  background-image:url("images/afpaLogo.jpg"); 
-  background-size: 100% 100%;
-  grid-column: 5;
-  grid-row: 1 /span 2;
+  flex:0 1 14%;
+  background-color: #FFFFFF;
+  background-size: 80%;
+
 }
 
 .item4 {
+  flex:0 1 100%;
   background-color: rgba(140, 114, 114, 0.8);
   padding-top:20px;   
-  font-size: 40px;
-  grid-column: 1 / span 5;
-  grid-row: 3;
+  font-size: 2em;
+  
 }
 .item5 {
-  font-size: 8px;
-  grid-column: 2;
-  grid-row: 4/span 2;
+  flex:0 1 20%;
+  font-size: 0.6em;
+  
 }
 .item6 {
-  font-size: 8px;
-  grid-column: 3;
-  grid-row: 4/span 2;
+  flex:0 1 20%;
+  font-size: 0.6em;
+ 
 }
 .item7 {
-   font-size: 8px;
-  grid-column: 4;
-  grid-row: 4 /span 2;
+  flex:0 1 20%;
+   font-size: 0.6em;
+ 
 }
 .item8 {
-  font-size: 8px;
-  grid-column: 5;
-  grid-row: 4 / span 2;
+  flex:0 1 20%;
+  font-size: 0.6em;
+ 
 }
 .item9 {
+  flex:0 1 14.2%;
+  background-color: #FFFFFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
   background-image:url("images/W3CLogo.jpeg"); 
-  background-size: 100% 100%;
-  font-size: 8px;
-  grid-column: 1;
-  grid-row: 4 / span 2;
+  min-width: 11%;
+  min-height:11%;
+
+  font-size: 0.7em;
+  
 }
 .item10 {
-  font-size: 45px;
+  flex:0 1 100%;
+  font-size: 2.5em;
   font-family: "Helvetica" ;
   background-color: rgba(140, 114, 114, 0.8);
-  grid-column: 1/ span 5;
-  grid-row: 6;
+  
 }
 
 .item11 {
-  background-image:url("images/deconfinement.jpeg"); 
-  background-size: 100% 100%;
-  grid-column: 1/ span 3;
-  grid-row: 7 /span 4;
+  flex:0 1 45%;
+  background-color: #FFFFFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-width: 45%;
+  min-height: 100%;
+ 
 }
 .item12 {
-  font-size: 10px;
-  grid-column: 4/ span 2;
-  grid-row: 7 /span 4;
-}
+  flex:0 1 53%;
+  font-size: 0.8em;
 
+}
+ 
 .item13 {
-  background-image:url("images/humour.jpeg"); 
-  background-size: 100% 100%;
-  background-size: 100% 100%;
-  grid-column: 1/span 2;
-  grid-row: 11/ span 2 ;
+  flex: 0 1 40%;
+  background-color: #FFFFFF;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+
 }
 .item14 {
-  
-  background-size:100% 100%;
-  grid-column: 3/span 3;
-  grid-row: 11/ span 2 ;
+  flex:0 1 58%;
+  background-color: #FFFFFF;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
-.item15 {
-  font-size: 150px;
-   background-color: rgba(140, 114, 114, 0.8);
-  padding-top:20px;   
-  font-size: 30px;
-  grid-column: 1 / span 5;
-  grid-row: 13;
-}
+
 
 </style>
 </head>
@@ -127,11 +135,12 @@
 
 <div class="grid-container">
   <div class="grid-item item1">
-    <p>Lundi 11 Mai 2020<p>
+    <p>Mardi 12 Mai 2020<p>
   </div>
   <div class="grid-item item2">CDA NEWS <br>La gazette des stagiaires</div>
-  <div class="grid-item item3"></div>  
-  <div class="grid-item item4">La Formation après le COVID-19</div>
+  <div class="grid-item item3"><img src="images/afpaLogo.jpg" width="80%" height="80%"></div>  
+  <div class="grid-item item4">La Formation après le COVID-19 ?</div>
+  <div class="grid-item item9">The Best Way To Learn</div>
   <div class="grid-item item5">
 
     <p>
@@ -142,20 +151,19 @@
     </div>
   <div class="grid-item item6"> 
     <p>
-     <p>
     <b>À compter du 25 mai 2020:</b> les centres ouvriront progressivement aux stagiaires avec une attention particulière portée pour celles et ceux :
     <ul>
         <li>en fin de formation pour préparation à la certification</li>
         <li>ayant vu leur formation suspendue pendant la période de confinement</li>
         <li>ayant décrochés pendant la phase de confinement</li>
         <li>dont la formation ne peut se poursuivre à distance</li>
-    </ul>
-    </p>   
+    </ul>  
     </p>
     </div>
   <div class="grid-item item7">
     <p>
-    Si vous n’êtes dans aucune de ces situations, votre formation se poursuit pour le moment à distance et la reprise en centre se fera après le 25 mai. <b>Nous vous communiquerons entre le 18 et le 20 mai,</b> votre date précise de retour en centre (25 mai ou date ultérieure) ainsi que le détail des mesures sanitaires mises en place dans notre centre et sur votre plateau de formation.
+    Si vous n’êtes dans aucune de ces situations, votre formation se poursuit pour le moment à distance et la reprise en centre se fera après le 25 mai.<br><br>
+    <b>Nous vous communiquerons entre le 18 et le 20 mai,</b> votre date précise de retour en centre (25 mai ou date ultérieure) ainsi que le détail des mesures sanitaires mises en place dans notre centre et sur votre plateau de formation.
     </p>    
        </div>
   <div class="grid-item item8">
@@ -169,9 +177,9 @@
      
 </p>
 </div>
-  <div class="grid-item item9">The Best Way To Learn</div>
+  
   <div class="grid-item item10">Que pensent les stagiaires ?</div>
-  <div class="grid-item item11"></div>
+  <div class="grid-item item11"><img src="images/deconfinement.jpeg" width="100%" height="100%"></div>
   <div class="grid-item item12">
     <p>Je suis un des stagiaires de la formation CDA,</p>.
     <p>avec des collègues nous avons longuement évidemment nous n’avons pas pu arriver au consensus. Nous sommes nombreux et ne partageons pas forcement la même vision de l’objectif de la formation.</p>
@@ -182,9 +190,9 @@ En attendant je peux juste supposer qu’il s’agit de la préparation du proje
 Et c’est avec ce projet qu’on se présentera devant le jury.</p>
 
 </div>
-   <div class="grid-item item13"></div>
-   <div class="grid-item item14"><img src="images/pubOpenClassRoom.png"/ width="auto" height="auto"> </div>
-   <div class="grid-item item15"></div>
+   <div class="grid-item item13"><img src="images/humour.jpeg" width="100%" height="50%"></div>
+   <div class="grid-item item14"><img src="images/pubOpenClassRoom.png" width="100%" height="50%"></div>
+  
 </div>
  
 </body>
